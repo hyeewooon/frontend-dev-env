@@ -1,0 +1,31 @@
+.scroll-section {
+    background-color: bisque;
+    height: 2000px;
+}
+
+.box {
+    margin-top: 1000px;
+    width: 100px;
+    height: 100px;
+    background: #e5ffda;
+}
+
+.box.move-animation {
+    animation: change 1s ease;
+}
+
+@keyframes change {
+    0%, 100% {
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    50% {
+        width: 250px;
+        height: 250px;
+        opacity: 0;
+    }
+}
