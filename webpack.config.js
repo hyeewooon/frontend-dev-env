@@ -1,4 +1,5 @@
 const path = require("path");
+const MyWebpackPlugin = require("./my-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -17,7 +18,7 @@ module.exports = {
       },
       {
         // webpack5부터 url-loader는 Asset Modules로 대체
-        test: /\.(jpeg|png|gif|svg)$/,
+        test: /\.(jpeg|jpg|png|gif|svg)$/,
         type: "asset",
         parser: {
           dataUrlCondition: {
@@ -30,4 +31,5 @@ module.exports = {
       },
     ],
   },
+  plugins: [new MyWebpackPlugin()],
 };
