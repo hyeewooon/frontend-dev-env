@@ -9,3 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ".icon-container"
   ).innerHTML = `<img src="${icon_github}"></img>`;
 });
+
+console.log(process.env.NODE_ENV);
+console.log(TEST);
+console.log(api.domain);
